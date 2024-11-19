@@ -36,23 +36,23 @@ namespace ReadersAndRent.Services
             return new OkObjectResult(currentRentals);
         }
 
-        public async Task<IActionResult> GetRentHistoryForBook(int bookId)
-        {
-            var rentHistory = await _context.Rent.Where(r => r.ID_Book == bookId).ToListAsync();
-            var book = await _context.Books.FindAsync(bookId);
-            if (rentHistory != null && book != null)
-            {
-                return new OkObjectResult(rentHistory);
-            }
-            else if (book == null)
-            {
-                return new BadRequestObjectResult("Книги с таким ID не существует");
-            }
-            else
-            {
-                return new BadRequestObjectResult("История аренды для книги с таким ID не найдена");
-            }
-        }
+        //public async Task<IActionResult> GetRentHistoryForBook(int bookId)
+        //{
+        //    var rentHistory = await _context.Rent.Where(r => r.ID_Book == bookId).ToListAsync();
+        //    var book = await _context.Books.FindAsync(bookId);
+        //    if (rentHistory != null && book != null)
+        //    {
+        //        return new OkObjectResult(rentHistory);
+        //    }
+        //    else if (book == null)
+        //    {
+        //        return new BadRequestObjectResult("Книги с таким ID не существует");
+        //    }
+        //    else
+        //    {
+        //        return new BadRequestObjectResult("История аренды для книги с таким ID не найдена");
+        //    }
+        //}
 
         public async Task<IActionResult> RentHistoryForReader(int Id_Reader)
         {

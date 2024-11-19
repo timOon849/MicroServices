@@ -7,7 +7,7 @@ namespace BooksAndGenre.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class BookController
+    public class BookController : Controller
     {
         private readonly IBookService _bookService;
 

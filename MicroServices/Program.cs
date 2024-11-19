@@ -1,3 +1,6 @@
+using BooksAndGenre.Controllers;
+using ReadersAndRent.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,7 +18,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+void ConfigureServices(IServiceCollection services)
+{
+    services.AddHttpClient<BookController>();
+    services.AddHttpClient<GenreController>();
+    services.AddHttpClient<ReadersController>();
+    services.AddHttpClient<HistoryController>();
+    // Другие сервисы
+}
 app.UseAuthorization();
 
 app.MapControllers();

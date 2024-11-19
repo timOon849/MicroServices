@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Model\" />
     <Folder Include="Services\" />
@@ -27,7 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BooksAndGenre\BooksAndGenre.csproj" />
     <ProjectReference Include="..\ReadersAndRent\ReadersAndRent.csproj" />
-    <ProjectReference Include="..\WebPhotos\WebPhotos.csproj" />
   </ItemGroup>
 
 </Project>

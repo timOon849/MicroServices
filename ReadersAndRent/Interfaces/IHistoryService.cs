@@ -8,7 +8,7 @@ namespace ReadersAndRent.Interfaces
         Task<IActionResult> ReturnBook(int ID_History);
         Task<IActionResult> RentHistoryForReader(int Id_Reader);
         Task<IActionResult> GetCurrentRentals();
-        Task<IActionResult> GetRentHistoryForBook(int bookId);
+        //Task<IActionResult> GetRentHistoryForBook(int bookId);
 
     }
 }
