@@ -1,7 +1,5 @@
 ﻿using BooksAndGenre.Model;
 using Microsoft.AspNetCore.Mvc;
-
-using Microsoft.EntityFrameworkCore;
 using BooksAndGenre.Interfaces;
 using System;
 

@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServices", "MicroServices\MicroServices.csproj", "{7804FB8E-32FD-4727-94F5-289FE634ECDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroServices", "MicroServices\MicroServices.csproj", "{7804FB8E-32FD-4727-94F5-289FE634ECDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02F1E0D8-2A7D-4FDA-BD9B-0840307B3232} = {02F1E0D8-2A7D-4FDA-BD9B-0840307B3232}
+		{7C4A855C-A825-4534-82DD-85C53A9D8AD5} = {7C4A855C-A825-4534-82DD-85C53A9D8AD5}
+		{CB1FC336-5FF1-4CDD-804B-D67E126AA680} = {CB1FC336-5FF1-4CDD-804B-D67E126AA680}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksAndGenre", "BooksAndGenre\BooksAndGenre.csproj", "{CB1FC336-5FF1-4CDD-804B-D67E126AA680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BooksAndGenre", "BooksAndGenre\BooksAndGenre.csproj", "{CB1FC336-5FF1-4CDD-804B-D67E126AA680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadersAndRent", "ReadersAndRent\ReadersAndRent.csproj", "{02F1E0D8-2A7D-4FDA-BD9B-0840307B3232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadersAndRent", "ReadersAndRent\ReadersAndRent.csproj", "{02F1E0D8-2A7D-4FDA-BD9B-0840307B3232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPhotos", "WebPhotos\WebPhotos.csproj", "{7C4A855C-A825-4534-82DD-85C53A9D8AD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPhotos", "WebPhotos\WebPhotos.csproj", "{7C4A855C-A825-4534-82DD-85C53A9D8AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
