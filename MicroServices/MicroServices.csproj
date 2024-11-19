@@ -24,4 +24,10 @@
     <Folder Include="DB\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BooksAndGenre\BooksAndGenre.csproj" />
+    <ProjectReference Include="..\ReadersAndRent\ReadersAndRent.csproj" />
+    <ProjectReference Include="..\WebPhotos\WebPhotos.csproj" />
+  </ItemGroup>
+
 </Project>

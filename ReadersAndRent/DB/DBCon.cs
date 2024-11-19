@@ -13,6 +13,6 @@ namespace ReadersAndRent.DB
         public DbSet<Readers> Readers { get; set; }
         public DbSet<Rent> Rent { get; set; }
         public DbSet<Books> Books { get; set; }
-        //public DbSet<Genre> Genre { get; set; }
+        public DbSet<Genre> Genre { get; set; }
     }
 }
