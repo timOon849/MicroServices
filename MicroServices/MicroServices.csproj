@@ -18,14 +18,8 @@
 
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="Model\" />
     <Folder Include="Services\" />
     <Folder Include="DB\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BooksAndGenre\BooksAndGenre.csproj" />
-    <ProjectReference Include="..\ReadersAndRent\ReadersAndRent.csproj" />
   </ItemGroup>
 
 </Project>

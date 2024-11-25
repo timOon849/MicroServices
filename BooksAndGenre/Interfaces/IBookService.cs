@@ -7,12 +7,12 @@ namespace BooksAndGenre.Interfaces
     {
         Task<IActionResult> GetAllBooks();
         Task<IActionResult> GetInfoByID(int ID_Book);
-        Task<IActionResult> CreateNewBook(Books newBook);
-        Task<IActionResult> UpdateBook(int ID_Book, Books book);
+        Task<IActionResult> CreateNewBook([FromBody] Books newBook);
+        Task<IActionResult> UpdateBook([FromQuery] int ID_Book, [FromBody] Books UpdateBook);
         Task<IActionResult> DeleteBook(int ID_Book);
         Task<IActionResult> GetBooksByZhanr(string Namezhanr);
         Task<IActionResult> GetBookNameAuthor(string? Authorbook, string? Namebook);
-        Task<IActionResult> BooksPagination(int page, int pageSize);
-        Task<IActionResult> SearchOrFilter(string author, int? genreId, int? year);
+        Task<IActionResult> BooksPagination([FromQuery] int page, [FromQuery] int pageSize);
+        Task<IActionResult> SearchOrFilter([FromQuery] string author, [FromQuery] int? genreId, [FromQuery] int? year);
     }
 }

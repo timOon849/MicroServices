@@ -38,7 +38,7 @@ namespace BooksAndGenre.Services
             }
             else
             {
-                return new BadRequestObjectResult("Книга с данным ID не найдена или уже удалена");
+                return new BadRequestObjectResult("Жанр с данным ID не найден или уже удалёен");
             }
         }
 

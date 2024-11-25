@@ -40,7 +40,7 @@ namespace BooksAndGenre.Services
             {
                 _context.Remove(tecBook);
                 await _context.SaveChangesAsync();
-                return new OkResult();
+                return new OkObjectResult("Книга удалена");
             }
             else
             {

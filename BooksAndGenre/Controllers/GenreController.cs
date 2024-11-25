@@ -18,7 +18,7 @@ namespace BooksAndGenre.Controllers
 
         //o Получение списка всех жанров.
         [HttpGet]
-        [Route("GetAllZhanrs")]
+        [Route("GetallZhanrs")]
         public async Task<IActionResult> GetallZhanrs()
         {
             return await _zhanrService.GetallZhanrs();
